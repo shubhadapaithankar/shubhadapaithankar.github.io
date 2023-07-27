@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Container from './Container';
 import Footer from './Footer';
 import Nav from './Nav';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 import styles from '@styles/Home.module.css';
 
@@ -38,26 +38,26 @@ const Layout: React.FC<LayoutProps> = ({
           property="og:image"
           content="https://shubhadapaithankar.vercel.app/img/preview.webp"
         />
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <Script
-              async
-              src="https://www.googletagmanager.com/gtag/js?id=G-RZP6RWZ32F"
-            />
-            <Script
-              id="gtm-script"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-      
-                  gtag('config', 'G-RZP6RWZ32F');`,
-              }}
-            />
-          </>
-        )}
+        {/*{process.env.NODE_ENV === 'production' && (*/}
+        {/*  <>*/}
+        {/*    <Script*/}
+        {/*      async*/}
+        {/*      src="https://www.googletagmanager.com/gtag/js?id=G-RZP6RWZ32F"*/}
+        {/*    />*/}
+        {/*    <Script*/}
+        {/*      id="gtm-script"*/}
+        {/*      strategy="afterInteractive"*/}
+        {/*      dangerouslySetInnerHTML={{*/}
+        {/*        __html: `*/}
+        {/*          window.dataLayer = window.dataLayer || [];*/}
+        {/*          function gtag(){dataLayer.push(arguments);}*/}
+        {/*          gtag('js', new Date());*/}
+
+        {/*          gtag('config', 'G-RZP6RWZ32F');`,*/}
+        {/*      }}*/}
+        {/*    />*/}
+        {/*  </>*/}
+        {/*)}*/}
       </Head>
       <Nav
         isOpen={isOpen}

@@ -10,6 +10,9 @@ dependencies:
   '@vercel/analytics':
     specifier: ^1.0.1
     version: 1.0.1
+  csstype:
+    specifier: ^3.1.2
+    version: 3.1.2
   fast-glob:
     specifier: ^3.3.0
     version: 3.3.0
@@ -29,6 +32,9 @@ dependencies:
     specifier: ^4.4.1
     version: 4.4.1(react-dom@18.2.0)(react@18.2.0)
   notion-client:
+    specifier: ^6.16.0
+    version: 6.16.0
+  notion-types:
     specifier: ^6.16.0
     version: 6.16.0
   notion-utils:
